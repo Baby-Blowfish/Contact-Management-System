@@ -1,15 +1,4 @@
 #include "personal.h"
-#include "personal_load.h"
-#include "personal_add.h"
-#include "personal_print.h"
-#include "personal_delete.h"
-#include "personal_modify.h"
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#define FILE_NAME "data.bin"
 
 void Close(Node* head, Node* tail);
 
@@ -40,9 +29,8 @@ int main(void)
         printf("===============================\n");
 
         printf("Select Option  :  ");
-
-        scanf("%d", &choice);
-        getchar();
+        
+        choice = getSafeInt(0);
 
         // 데이터가 없을 경우 삭제 수정 프린트 x
         if ((choice == 2 || choice == 3 || choice == 4) && head == NULL) {
@@ -58,8 +46,7 @@ int main(void)
                 strtok(name,"\n");
 
                 printf("Enter Age:");
-                scanf("%d",&age);
-                getchar();
+                age= getSafeInt(0);
 
                 printf("Enter Phone: ");
                 fgets(phone, MAX_PHONE_LENGTH, stdin);

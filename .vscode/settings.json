@@ -6,6 +6,10 @@
         "personal_print.h": "c",
         "string.h": "c",
         "stdlib.h": "c",
-        "personal_serch.h": "c"
+        "personal_serch.h": "c",
+        "limits.h": "c",
+        "personal_add.h": "c",
+        "node.h": "c",
+        "personal_delete.h": "c"
     }
 }

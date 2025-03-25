@@ -2,6 +2,10 @@
 
 // Load(): 데이터 불러오기
 Node* Load(Node** tail, const char* filename) {
+
+    Node* head = NULL;
+    PERSON_INFO temp = { 0, "", ""};
+
     FILE* file = fopen(filename, "rb");
     if (!file) {
         printf("[Warning] No previous data found. Starting with an empty contact list.\n");
@@ -9,10 +13,8 @@ Node* Load(Node** tail, const char* filename) {
         return NULL;
     }
 
-    Node* head = NULL;
     *tail = NULL;
 
-    PERSON_INFO temp;
     while (fread(&temp, sizeof(PERSON_INFO), 1, file)) {
         Node *newnode = (Node*)malloc(sizeof(Node));
         if (!newnode) {

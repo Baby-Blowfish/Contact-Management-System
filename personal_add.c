@@ -3,18 +3,18 @@
 // Add(): 데이터 추가
 Node* Add(Node* head, Node** tail, int age, const char* name, const char* phone) {
     if (age <= 0) {
-        printf("[Error] Invalid age entered.\n");
+        printf("\n\033[31m[Error] Invalid age entered.\033[0m\n\n");
         return head;
     }
 
     if (strlen(name) == 0 || strlen(phone) == 0) {
-        printf("[Error] Name or phone cannot be empty.\n");
+        printf("\n\033[31m[Error] Name or phone cannot be empty.\033[0m\n\n");
         return head;
     }
 
     Node *newnode = (Node*)malloc(sizeof(Node));
     if (!newnode) {
-        perror("[Error] Memory allocation failed");
+        perror("\n\033[31m[Error] Memory allocation failed\033[0m\n\n");
         return head;
     }
 
