@@ -1,13 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "personal_load.h"
 
-#define FILE_NAME "data.bin"
-
 // Load(): 데이터 불러오기
-Node* Load(Node** tail) {
-    FILE* file = fopen(FILE_NAME, "rb");
+Node* Load(Node** tail, const char* filename) {
+    FILE* file = fopen(filename, "rb");
     if (!file) {
         printf("[Warning] No previous data found. Starting with an empty contact list.\n");
         *tail = NULL;

@@ -4,6 +4,8 @@
         "personal_load.h": "c",
         "personal.h": "c",
         "personal_print.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "stdlib.h": "c",
+        "personal_serch.h": "c"
     }
 }

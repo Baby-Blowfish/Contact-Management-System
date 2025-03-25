@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "personal.h"
 #include "personal_add.h"
 
 // Add(): 데이터 추가
@@ -22,9 +18,14 @@ Node* Add(Node* head, Node** tail, int age, const char* name, const char* phone)
         return head;
     }
 
+    memset(newnode, 0, sizeof(Node));
+
     newnode->data.nAge = age;
     strncpy(newnode->data.szName, name, MAX_NAME_LENGH);
+    newnode->data.szName[MAX_NAME_LENGH - 1] = '\0';
     strncpy(newnode->data.szPhone, phone, MAX_PHONE_LENGTH);
+    newnode->data.szPhone[MAX_PHONE_LENGTH - 1] = '\0';
+
     newnode->next = NULL;
 
     if (head == NULL) {
@@ -35,7 +36,7 @@ Node* Add(Node* head, Node** tail, int age, const char* name, const char* phone)
         *tail = newnode;
     }
 
-    printf("[Success] '%s' added successfully.\n", name);
+    printf("\n\033[1;32m [Success] '%s' added successfully.\033[0m\n\n", name);
     return head;
 }
 

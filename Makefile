@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -g
 
-SRC = personal.c personal_load.c personal_add.c personal_print.c
+SRC = personal.c personal_load.c personal_add.c personal_print.c personal_delete.c personal_modify.c
 OBJ = $(SRC:.c=.o)
 TARGET = contact_manager
 

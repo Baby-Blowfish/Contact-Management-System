@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include "personal_print.h"
-#include "personal.h"
 
 // PrintInfo(): 모든 데이터 출력
 void PrintInfo(Node* head) {
@@ -10,9 +8,13 @@ void PrintInfo(Node* head) {
     }
 
     Node* cur = head;
+
+    printf("\n................................... \n");
     while (cur) {
         printf("Name: %s, Age: %d, Phone: %s\n",
                cur->data.szName, cur->data.nAge, cur->data.szPhone);
         cur = cur->next;
     }
+    printf("................................... \n\n");
+    
 }
