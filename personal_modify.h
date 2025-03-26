@@ -24,6 +24,6 @@
  * @date 2025-03-26
  * @author Kim Hyo Jin
  */
-int Modify(Node *head, const char *keyword);
+int Modify(Node *head);
 
 #endif // MODIFY_H

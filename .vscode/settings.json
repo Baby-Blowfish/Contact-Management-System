@@ -10,6 +10,7 @@
         "limits.h": "c",
         "personal_add.h": "c",
         "node.h": "c",
-        "personal_delete.h": "c"
+        "personal_delete.h": "c",
+        "personal_modify.h": "c"
     }
 }

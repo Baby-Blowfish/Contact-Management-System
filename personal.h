@@ -17,6 +17,14 @@
 #define MAX_PHONE_LENGTH 20
 #define FILE_NAME "data.bin"
 
+#define FILE_NAME "data.bin"
+#define COLOR_RESET   "\033[0m"
+#define COLOR_RED     "\033[31m"
+#define COLOR_GREEN   "\033[32m"
+#define COLOR_YELLOW  "\033[33m"
+#define COLOR_BLUE    "\033[34m"
+#define COLOR_CYAN    "\033[36m"
+
 #include "node.h"
 #include "personal_load.h"
 #include "personal_add.h"
@@ -24,6 +32,7 @@
 #include "personal_delete.h"
 #include "personal_modify.h"
 #include "get_string_int.h"
+
 
 
 

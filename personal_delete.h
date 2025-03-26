@@ -24,6 +24,6 @@
  * @date 2025-03-26
  * @author Kim Hyo Jin
  */
-int Delete(Node **head, Node **tail, const char *keyword);
+int Delete(Node **head, Node **tail);
 
 #endif // DELETE_H

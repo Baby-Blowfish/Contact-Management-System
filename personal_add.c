@@ -36,7 +36,7 @@ Node* Add(Node* head, Node** tail, int age, const char* name, const char* phone)
         *tail = newnode;
     }
 
-    printf("\n\033[1;32m [Success] '%s' added successfully.\033[0m\n\n", name);
+    printf("\n\033[1;36m [Success] '%s' added successfully.\033[0m\n\n", name);
     return head;
 }
 

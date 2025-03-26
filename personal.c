@@ -13,10 +13,10 @@ void Close(Node *head, Node *tail);
 int main(void)
 {
 
-    int choice, age;
-    char name[MAX_NAME_LENGH];
-    char phone[MAX_PHONE_LENGTH];
-    char keyword[MAX_PHONE_LENGTH];
+    int choice = 0, age = 0;
+    char name[MAX_NAME_LENGH] = {0};
+    char phone[MAX_PHONE_LENGTH] = {0};
+    char keyword[MAX_PHONE_LENGTH] = {0};
 
     Node *head = NULL;
     Node *tail = NULL;
@@ -37,7 +37,7 @@ int main(void)
 
         printf("Select Option  :  ");
 
-        choice = getSafeInt(0);
+        choice = inputIntRequired();
 
         // 데이터가 없을 경우 삭제 수정 프린트 x
         if ((choice == 2 || choice == 3 || choice == 4) && head == NULL)
@@ -50,31 +50,23 @@ int main(void)
         {
         case 1:
             printf("Enter Name: ");
-            fgets(name, MAX_NAME_LENGH, stdin);
-            strtok(name, "\n");
+            inputTextRequired(name, MAX_NAME_LENGH);
 
             printf("Enter Age:");
-            age = getSafeInt(0);
+            age = inputIntRequired();
 
             printf("Enter Phone: ");
-            fgets(phone, MAX_PHONE_LENGTH, stdin);
-            strtok(phone, "\n");
+            inputPhoneDigitsOnly(phone, MAX_NAME_LENGH);
 
             head = Add(head, &tail, age, name, phone);
             break;
         case 2:
-            printf("Enter Name, Age, or Phone to Delete: ");
-            fgets(keyword, MAX_NAME_LENGH, stdin);
-            strtok(keyword, "\n");
-            if (Delete(&head, &tail, keyword) == 0)
-                printf("\n\033[1;31m[Not Found] %s is not in the contact list.\033[0m\n\n", keyword);
+            if (Delete(&head, &tail) == 0)
+            printf(COLOR_GREEN "\n[Not Found] %s is not in the contact list.\n\n" COLOR_RESET, keyword);
             break;
         case 3:
-            printf("Enter Name, Age, or Phone to Modify: ");
-            fgets(keyword, MAX_NAME_LENGH, stdin);
-            strtok(keyword, "\n");
-            if (Modify(head, keyword) == 0)
-                printf("\n\033[1;31m[Not Found] %s is not in the contact list.\033[0m\n\n", keyword);
+            if (Modify(head) == 0)
+                printf(COLOR_GREEN "\n[Not Found] %s is not in the contact list.\n\n" COLOR_RESET, keyword);
             break;
         case 4:
             PrintInfo(head);
@@ -106,7 +98,7 @@ void Close(Node *head, Node *tail)
     FILE *file = fopen(FILE_NAME, "wb");
     if (!file)
     {
-        perror("File open error");
+        perror(COLOR_RED "\n\nFile open error\n" COLOR_RESET);
         return;
     }
 
@@ -115,7 +107,7 @@ void Close(Node *head, Node *tail)
     {
         if (fwrite(&(cur->data), sizeof(PERSON_INFO), 1, file) != 1)
         {
-            perror("[Error] Data save failed");
+            perror(COLOR_RED "\n\n [Error] Data save failed\n" COLOR_RESET);
             fclose(file);
             return;
         }
@@ -131,5 +123,5 @@ void Close(Node *head, Node *tail)
     }
 
     fclose(file);
-    printf("\n\033[1;35mData saved successfully.\033[0m\n\n");
+    printf("\n\033[1;36mData saved successfully.\033[0m\n\n");
 }

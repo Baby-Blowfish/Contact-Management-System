@@ -5,7 +5,7 @@ void PrintInfo(Node *head)
 {
     if (!head)
     {
-        printf("No data available.\n");
+        printf(COLOR_YELLOW "\nNo data available.\n\n" COLOR_RESET);
         return;
     }
 
