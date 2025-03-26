@@ -1,0 +1,9 @@
+<map id="personal.h" name="personal.h">
+<area shape="rect" id="node1" title="Header file for managing personal information." alt="" coords="335,5,425,32"/>
+<area shape="rect" id="node2" href="$node_8h.html" title="Defines the Node structure and personal info data structure." alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" href="$personal__load_8h.html" title="Header file for loading personal information from a file." alt="" coords="96,80,221,107"/>
+<area shape="rect" id="node4" href="$personal__add_8h.html" title="Header file for adding personal information." alt="" coords="246,80,367,107"/>
+<area shape="rect" id="node5" href="$personal__print_8h.html" title="Header file for printing personal information." alt="" coords="391,80,518,107"/>
+<area shape="rect" id="node6" href="$personal__delete_8h.html" title="Header file for deleting personal information." alt="" coords="543,80,681,107"/>
+<area shape="rect" id="node7" href="$personal__modify_8h.html" title="Header file for modifying personal information." alt="" coords="706,80,846,107"/>
+</map>

@@ -1,3 +1,11 @@
+/**
+ * @file personal.h
+ * @brief Header file for managing personal information.
+ * @details Includes definitions, constants, and headers required for managing a personal info system such as adding, deleting, and modifying personal data.
+ * @date 2025-03-26
+ * @author Kim Hyo Jin
+ */
+
 #ifndef PERSONAL_H
 #define PERSONAL_H
 
