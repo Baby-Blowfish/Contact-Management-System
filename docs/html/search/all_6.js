@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['personal_2eh_7',['personal.h',['../personal_8h.html',1,'']]],
-  ['personal_5fadd_2eh_8',['personal_add.h',['../personal__add_8h.html',1,'']]],
-  ['personal_5fdelete_2eh_9',['personal_delete.h',['../personal__delete_8h.html',1,'']]],
-  ['personal_5fload_2eh_10',['personal_load.h',['../personal__load_8h.html',1,'']]],
-  ['personal_5fmodify_2eh_11',['personal_modify.h',['../personal__modify_8h.html',1,'']]],
-  ['personal_5fprint_2eh_12',['personal_print.h',['../personal__print_8h.html',1,'']]],
-  ['printinfo_13',['PrintInfo',['../personal__print_8h.html#a969407fda543b8ad7affd7fe0fcf62e8',1,'personal_print.c']]]
+  ['inputintorkeep_14',['inputIntOrKeep',['../get__string__int_8c.html#ac6e61c24f9f3c47c68de8ad6f863e098',1,'inputIntOrKeep(int currentValue):&#160;get_string_int.c'],['../get__string__int_8h.html#ac6e61c24f9f3c47c68de8ad6f863e098',1,'inputIntOrKeep(int currentValue):&#160;get_string_int.c']]],
+  ['inputintrequired_15',['inputIntRequired',['../get__string__int_8c.html#a32a79f8735c85e9cea4cc2bd70dcabd4',1,'inputIntRequired():&#160;get_string_int.c'],['../get__string__int_8h.html#aa5d66991341079348d083b0addf36417',1,'inputIntRequired(void):&#160;get_string_int.c']]],
+  ['inputphonedigitsonly_16',['inputPhoneDigitsOnly',['../get__string__int_8c.html#a914feaf68849dee33e70905f02f4733a',1,'inputPhoneDigitsOnly(char *output, size_t maxLength):&#160;get_string_int.c'],['../get__string__int_8h.html#a914feaf68849dee33e70905f02f4733a',1,'inputPhoneDigitsOnly(char *output, size_t maxLength):&#160;get_string_int.c']]],
+  ['inputphonedigitsonlyorkeep_17',['inputPhoneDigitsOnlyOrKeep',['../get__string__int_8c.html#abc745b945b57b32cb54cccf522357674',1,'inputPhoneDigitsOnlyOrKeep(char *currentValue, size_t maxLength):&#160;get_string_int.c'],['../get__string__int_8h.html#abc745b945b57b32cb54cccf522357674',1,'inputPhoneDigitsOnlyOrKeep(char *currentValue, size_t maxLength):&#160;get_string_int.c']]],
+  ['inputtextorkeep_18',['inputTextOrKeep',['../get__string__int_8c.html#ac6b7a051b8bc7faa507c6335ed126cf4',1,'inputTextOrKeep(char *currentValue, size_t maxLength):&#160;get_string_int.c'],['../get__string__int_8h.html#ac6b7a051b8bc7faa507c6335ed126cf4',1,'inputTextOrKeep(char *currentValue, size_t maxLength):&#160;get_string_int.c']]],
+  ['inputtextrequired_19',['inputTextRequired',['../get__string__int_8c.html#a5246affef1063f26d523f02b5fb7ca7d',1,'inputTextRequired(char *currentValue, size_t maxLength):&#160;get_string_int.c'],['../get__string__int_8h.html#a5246affef1063f26d523f02b5fb7ca7d',1,'inputTextRequired(char *currentValue, size_t maxLength):&#160;get_string_int.c']]],
+  ['inputyesorno_20',['inputYesOrNo',['../get__string__int_8c.html#a9db28818e09aa039f7ba027f36fa3eac',1,'inputYesOrNo(char *answer, size_t maxLength):&#160;get_string_int.c'],['../get__string__int_8h.html#a9db28818e09aa039f7ba027f36fa3eac',1,'inputYesOrNo(char *answer, size_t maxLength):&#160;get_string_int.c']]]
 ];

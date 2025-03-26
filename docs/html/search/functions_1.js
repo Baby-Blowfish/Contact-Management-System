@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['delete_25',['Delete',['../personal__delete_8h.html#aa50a7a67e1f8079bff5acd216cbc1ded',1,'personal_delete.c']]]
+  ['close_69',['Close',['../personal_8c.html#af5fd46a51beb529acaccd8db034d3a80',1,'personal.c']]]
 ];

@@ -65,21 +65,41 @@ $(function() {
 <div class="title">get_string_int.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GET_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GET_H</span></div>
+<a href="get__string__int_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GET_STRING_INPUT_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GET_STRING_INPUT_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;limits.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;errno.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;limits.h&gt;</span>  <span class="comment">// INT_MIN, INT_MAX</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">int</span> getSafeInt(<span class="keywordtype">int</span> currentValue);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;errno.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;ctype.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stddef.h&gt;</span> <span class="comment">// size_t</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> getInputString( <span class="keywordtype">char</span>* currentValue, <span class="keywordtype">size_t</span> maxLength);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">int</span> <a class="code" href="get__string__int_8h.html#aa5d66991341079348d083b0addf36417">inputIntRequired</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="get__string__int_8h.html#ac6b7a051b8bc7faa507c6335ed126cf4">inputTextOrKeep</a>(<span class="keywordtype">char</span> *currentValue, <span class="keywordtype">size_t</span> maxLength);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="get__string__int_8h.html#a5246affef1063f26d523f02b5fb7ca7d">inputTextRequired</a>(<span class="keywordtype">char</span> *currentValue, <span class="keywordtype">size_t</span> maxLength);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="get__string__int_8h.html#a914feaf68849dee33e70905f02f4733a">inputPhoneDigitsOnly</a>(<span class="keywordtype">char</span>* output, <span class="keywordtype">size_t</span> maxLength);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="get__string__int_8h.html#abc745b945b57b32cb54cccf522357674">inputPhoneDigitsOnlyOrKeep</a>(<span class="keywordtype">char</span> *currentValue, <span class="keywordtype">size_t</span> maxLength);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">int</span> <a class="code" href="get__string__int_8h.html#ac6e61c24f9f3c47c68de8ad6f863e098">inputIntOrKeep</a>(<span class="keywordtype">int</span> currentValue);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span> <a class="code" href="get__string__int_8h.html#a9db28818e09aa039f7ba027f36fa3eac">inputYesOrNo</a>(<span class="keywordtype">char</span> *answer, <span class="keywordtype">size_t</span> maxLength);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // GET_STRING_INPUT_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aget__string__int_8h_html_a5246affef1063f26d523f02b5fb7ca7d"><div class="ttname"><a href="get__string__int_8h.html#a5246affef1063f26d523f02b5fb7ca7d">inputTextRequired</a></div><div class="ttdeci">void inputTextRequired(char *currentValue, size_t maxLength)</div><div class="ttdoc">Prompt user for text input (no number allowed, required input).</div><div class="ttdef"><b>Definition:</b> get_string_int.c:170</div></div>
+<div class="ttc" id="aget__string__int_8h_html_a914feaf68849dee33e70905f02f4733a"><div class="ttname"><a href="get__string__int_8h.html#a914feaf68849dee33e70905f02f4733a">inputPhoneDigitsOnly</a></div><div class="ttdeci">void inputPhoneDigitsOnly(char *output, size_t maxLength)</div><div class="ttdoc">Prompt for phone number input (digits only, required).</div><div class="ttdef"><b>Definition:</b> get_string_int.c:46</div></div>
+<div class="ttc" id="aget__string__int_8h_html_ac6e61c24f9f3c47c68de8ad6f863e098"><div class="ttname"><a href="get__string__int_8h.html#ac6e61c24f9f3c47c68de8ad6f863e098">inputIntOrKeep</a></div><div class="ttdeci">int inputIntOrKeep(int currentValue)</div><div class="ttdoc">Prompt user for integer input. Enter retains previous value.</div><div class="ttdef"><b>Definition:</b> get_string_int.c:222</div></div>
+<div class="ttc" id="aget__string__int_8h_html_aa5d66991341079348d083b0addf36417"><div class="ttname"><a href="get__string__int_8h.html#aa5d66991341079348d083b0addf36417">inputIntRequired</a></div><div class="ttdeci">int inputIntRequired(void)</div><div class="ttdoc">Prompt user for an integer input (required).</div><div class="ttdef"><b>Definition:</b> get_string_int.c:5</div></div>
+<div class="ttc" id="aget__string__int_8h_html_a9db28818e09aa039f7ba027f36fa3eac"><div class="ttname"><a href="get__string__int_8h.html#a9db28818e09aa039f7ba027f36fa3eac">inputYesOrNo</a></div><div class="ttdeci">void inputYesOrNo(char *answer, size_t maxLength)</div><div class="ttdoc">Prompt user until 'yes' or 'no' is entered.</div><div class="ttdef"><b>Definition:</b> get_string_int.c:262</div></div>
+<div class="ttc" id="aget__string__int_8h_html_ac6b7a051b8bc7faa507c6335ed126cf4"><div class="ttname"><a href="get__string__int_8h.html#ac6b7a051b8bc7faa507c6335ed126cf4">inputTextOrKeep</a></div><div class="ttdeci">void inputTextOrKeep(char *currentValue, size_t maxLength)</div><div class="ttdoc">Prompt user for text input (no number allowed, empty input retains previous value).</div><div class="ttdef"><b>Definition:</b> get_string_int.c:129</div></div>
+<div class="ttc" id="aget__string__int_8h_html_abc745b945b57b32cb54cccf522357674"><div class="ttname"><a href="get__string__int_8h.html#abc745b945b57b32cb54cccf522357674">inputPhoneDigitsOnlyOrKeep</a></div><div class="ttdeci">void inputPhoneDigitsOnlyOrKeep(char *currentValue, size_t maxLength)</div><div class="ttdoc">Prompt user for phone number (digits only, enter retains previous value).</div><div class="ttdef"><b>Definition:</b> get_string_int.c:88</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

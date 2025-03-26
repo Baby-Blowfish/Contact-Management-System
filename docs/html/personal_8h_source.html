@@ -73,27 +73,37 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define MAX_NAME_LENGH 10</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define MAX_PHONE_LENGTH 20</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="personal_8h.html#af865d41f5f7d341074399fd8d909ba05">   16</a></span>&#160;<span class="preprocessor">#define MAX_NAME_LENGH 10</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="personal_8h.html#a60727c14e2eeb00cd2baa5f35bfc9345">   17</a></span>&#160;<span class="preprocessor">#define MAX_PHONE_LENGTH 20</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define FILE_NAME &quot;data.bin&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="node_8h.html">node.h</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personal__load_8h.html">personal_load.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personal__add_8h.html">personal_add.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personal__print_8h.html">personal_print.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personal__delete_8h.html">personal_delete.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personal__modify_8h.html">personal_modify.h</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;get_string_int.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="personal_8h.html#ab117546549783a058d0321a287699579">   20</a></span>&#160;<span class="preprocessor">#define FILE_NAME &quot;data.bin&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="personal_8h.html#a17f760256046df23dd0ab46602f04d02">   21</a></span>&#160;<span class="preprocessor">#define COLOR_RESET   &quot;\033[0m&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="personal_8h.html#ad86358bf19927183dd7b4ae215a29731">   22</a></span>&#160;<span class="preprocessor">#define COLOR_RED     &quot;\033[31m&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="personal_8h.html#afc9149f5de51bd9ac4f5ebbfa153f018">   23</a></span>&#160;<span class="preprocessor">#define COLOR_GREEN   &quot;\033[32m&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="personal_8h.html#a4534b577b74a58b0f4b7be027af664e0">   24</a></span>&#160;<span class="preprocessor">#define COLOR_YELLOW  &quot;\033[33m&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="personal_8h.html#a23c70d699a5a775bc2e1ebeb8603f630">   25</a></span>&#160;<span class="preprocessor">#define COLOR_BLUE    &quot;\033[34m&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="personal_8h.html#a82573859711fce56f1aa0a76b18a9b18">   26</a></span>&#160;<span class="preprocessor">#define COLOR_CYAN    &quot;\033[36m&quot;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="node_8h.html">node.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personal__load_8h.html">personal_load.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personal__add_8h.html">personal_add.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personal__print_8h.html">personal_print.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personal__delete_8h.html">personal_delete.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personal__modify_8h.html">personal_modify.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="get__string__int_8h.html">get_string_int.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="apersonal__load_8h_html"><div class="ttname"><a href="personal__load_8h.html">personal_load.h</a></div><div class="ttdoc">Header file for loading personal information from a file.</div></div>
 <div class="ttc" id="apersonal__modify_8h_html"><div class="ttname"><a href="personal__modify_8h.html">personal_modify.h</a></div><div class="ttdoc">Header file for modifying personal information.</div></div>
 <div class="ttc" id="anode_8h_html"><div class="ttname"><a href="node_8h.html">node.h</a></div><div class="ttdoc">Defines the Node structure and personal info data structure.</div></div>
 <div class="ttc" id="apersonal__add_8h_html"><div class="ttname"><a href="personal__add_8h.html">personal_add.h</a></div><div class="ttdoc">Header file for adding personal information.</div></div>
 <div class="ttc" id="apersonal__print_8h_html"><div class="ttname"><a href="personal__print_8h.html">personal_print.h</a></div><div class="ttdoc">Header file for printing personal information.</div></div>
+<div class="ttc" id="aget__string__int_8h_html"><div class="ttname"><a href="get__string__int_8h.html">get_string_int.h</a></div></div>
 <div class="ttc" id="apersonal__delete_8h_html"><div class="ttname"><a href="personal__delete_8h.html">personal_delete.h</a></div><div class="ttdoc">Header file for deleting personal information.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['load_3',['Load',['../personal__load_8h.html#aeb4890c37a4a4fa5d74a368b9ae66586',1,'personal_load.c']]]
+  ['data_9',['data',['../structnode__.html#a8d26ef8df998031c234840cf26bc6f56',1,'node_']]],
+  ['delete_10',['Delete',['../personal__delete_8c.html#a0a305c2e27db1b6ca5dca08b3af9e5f6',1,'Delete(Node **head, Node **tail):&#160;personal_delete.c'],['../personal__delete_8h.html#a0a305c2e27db1b6ca5dca08b3af9e5f6',1,'Delete(Node **head, Node **tail):&#160;personal_delete.c']]]
 ];
